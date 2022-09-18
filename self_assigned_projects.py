@@ -6,3 +6,5 @@ words = receivedmessage_email.split()
 email = words[1]
 part = email.split('@')
 print(part[1])
+
+#
