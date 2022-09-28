@@ -1,3 +1,5 @@
+#Day 1
+
 #print function elements - () "" ''
     #"" or '' is identical
     #print("print("what to print")") - double quotes "" two times gives a syntax error.
@@ -45,3 +47,34 @@
     #Certain previledge words, do not use them as name
     #make sure all the names of the variable gets highlighted in the same color
     #name error if the name of the variable and the typed name not matched
+
+#Day 2
+# datatype, numbers, operations, Type conversions, f-strings
+
+#datatype
+    # strings
+    # integers
+    # booleans
+    # float
+
+# string str
+    #pulling out each character of a string individually is done by putting the index/position of
+    # the character we want
+    # print("Hello"[4])
+    #This method is called subscripting.
+    # Remember to add the index after "" to not include it as a string i.e. piece of text but extraction
+
+#integer int
+    #can use operators to calculate two numbers without using "" but in () to add integers or for
+    # Python to know it is an integer
+        # print(123)
+        # print(123 + 5)
+    #In python, commas between numbers can be replaced with _ so (100_000) instead of (100,000)
+    #and it will be interpreted by the computer as 100000 so the computer will remove _and ignores it
+
+#Float float
+    # floating point number (3.14)
+
+#Boolean bool
+    # Two possible values True or False
+    # Capital T and F are important
