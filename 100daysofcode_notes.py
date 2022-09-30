@@ -79,4 +79,56 @@
     # Two possible values True or False
     # Capital T and F are important
 
-    
+# Datatype and their conversions
+    # len() gives an error when passing a number i.e int instead of a str
+    # type() checks for what's in the parenthesis and gives you the type data that it is
+    # can save a converted datatype into a new variable. for instance
+        #num_char = len(input("What is your name?"
+        #new_num_char = str(num_char)
+        #print("Your name has " + new_num_char + " character.")
+
+#Mathematical operations
+    # subtraction -
+    # multiplication *
+    # divide - / will always get a float
+    # Addition +
+    # exponents (raise a number to the power) **
+    # When you have more than one operation on the same line of code, there is priority
+        #Follow PAMDAS - parenthesis, exponents, multiplication, division, addition, subtraction
+        #Multiplication and division are equally imp, addition and subtraction are equally imp.
+        #The one to the left has first priority in the above case
+    #Adding () nested in (), the inside() gets prioritized. Low priority calculations become highest & would happen first
+
+#Number manipulation
+#The round() function rounds the number into a whole number (.5 rule for result). can specify how many decimal points to include in the rounding by adding comma. eg
+    #print(3+4.41, 2) will result in 7.41
+    #for getting back int not float, use // (3.0 // 2) will give you 5. Datatype will be int. Its called Floor division
+
+#If we had saved the result of this calculation in a variable, then one of the things you can do is,
+#comtimue performing calculations on this variable
+    #x = 4/2
+    #x =/ 2
+    #Result will be 1
+#score = 0
+#user scores a point
+    #score += 1
+#result - score = 1
+
+#F-strings
+    #Makes it easy to mix strings and various datatypes
+#instead of converting multiple datatypes in a line of code and separating them with a +, f-String can be used
+#f goes in front of '' or ""
+    #score = 0
+    #height = 1.8
+    #iswinning = True
+
+    #print(f"your score is {score}, your height is{height}, you are winning is{iswinning}")
+#Result = your score is 0, your height is 1.8, you are winning is True. Here, all the datatypes got converted to str
+#Remember to add spaces when required
+
+#score = 0
+#height = 1.8
+#iswinning = True
+
+#print(f"your score is {score}, your height is {height}, you are winning is {iswinning}")
+
