@@ -132,3 +132,13 @@
 
 #print(f"your score is {score}, your height is {height}, you are winning is {iswinning}")
 
+#total_individual_bill =] "{:.2f}".format(individual_tip_amount + total_bill/num_of_people)
+#above is formatting for decimal places, f string
+
+#Day 3
+# conditional statements
+# logical operators
+# code blocks
+# scope
+
+#
