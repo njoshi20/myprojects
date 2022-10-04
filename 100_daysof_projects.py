@@ -77,4 +77,51 @@
 #message = (f"you have {days} days, {weeks} weeks, and {months} months left")
 #print(message)
 
-#Conditional statements exercise - treasure island game
+#9.Conditional statements exercise - treasure island game
+#Ticketing task
+#print("Welcome to the rollercoster!")
+#height = int(input("What is your height in cm?\n"))
+#if height >= 120:
+    #print("You can ride the rollercoster!")
+    #age = int(input("What is your age?\n"))
+    #if age < 12:
+        #print("You need to pay $5.")
+    #elif age <= 18:
+        #print("You need to pay $7.")
+    #else:
+        #print("Please pay $12.")
+#else:
+    #print("Sorry, you can't ride the rollercoster")
+
+#9.1 BMI calculator (age range) using conditional
+
+#print("Welcome to the BMI calculator")
+#weight = float(input("What is your weight in kg?\n"))
+#height = float(input("What is your height in meter?\n"))
+#BMI = round(weight/(height**2))
+#if BMI <18.5:
+    #print(f"Your BMI is {BMI}, you are underweight.")
+#elif BMI <25:
+    #print(f"Your BMI is {BMI}, you have a normal weight.")
+#elif BMI <30:
+    #print(f"Your BMI is {BMI}, you are slightly overweight.")
+#elif BMI <35:
+    #print(f"Your BMI is {BMI}, you are obese.")
+#else:
+    #print(f"Your BMI is {BMI}, you are clinically obese.")
+
+#9.2 Leap year challenge
+
+print("Welcome to the leap year calendar")
+year = int(input("Which year do you want to check?\n"))
+
+if year/4 == 0:
+    print("It is a leap year")
+elif year/100 == 0:
+    print("It is not a leap year")
+elif year/400 == 0:
+    print("It is a leap year")
+else:
+    print("It is not a leap year")
+
+

@@ -141,4 +141,49 @@
 # code blocks
 # scope
 
-#
+#Syntax
+
+#if condition:
+    #do this
+#else:
+    #do this
+#Everything written after the :, it is a block of code
+
+#Comparision operators
+
+# >     Greater than
+# <     Less than
+# >=    Greater than or equal to
+# <=    Less than or equal to
+# ==    equal to
+# !=    not equal to
+
+# %     modulo - will divide a number by another and give the remainder of that division as the return value
+#remember example: 7% 2 = 1 because it is 2 + 2 + 2 + 1 and 7% 3 = 1 because it is 3 + 3 + 1
+
+#Nested if and elif statement
+
+#In a nested if, if one condition is passed, we check for another condition and then we can have another if else inside the if condition
+#The computer looks at the overall condition and starts evaluating the first if statement. Here, it wants to find out if it needs to read through the else block or
+#go to the nested if - else condition
+
+#if condition:
+    #if another condition:
+        #do this
+    #else:
+        #do this
+    #else:
+        #do this
+
+#To go to the 2nd if, the 1st if already has to be true
+#Example code:
+
+#Can use multiple elif between the nested if...else
+
+#elif condition:
+    #if condition1:
+        #do this
+    #elif condition2:
+        #do this
+    #else:
+        #do this
