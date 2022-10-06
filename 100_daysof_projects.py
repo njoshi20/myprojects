@@ -77,7 +77,7 @@
 #message = (f"you have {days} days, {weeks} weeks, and {months} months left")
 #print(message)
 
-#9.Conditional statements exercise - treasure island game
+#9.Conditional statements exercise
 #Ticketing task
 #print("Welcome to the rollercoster!")
 #height = int(input("What is your height in cm?\n"))
@@ -110,18 +110,161 @@
 #else:
     #print(f"Your BMI is {BMI}, you are clinically obese.")
 
-#9.2 Leap year challenge
+#9.2.1 Nested if
+# Leap year challenge
+#Write a program that works out wheather if a given year is a leap year.
+#on every year that is evenly divisible by 4
+    #except every year is evenly divisible by 100
+        #unless the year is also evenly divisible by 400
+#year = int(input("What year do you want to check?\n"))
+#if year % 4 == 0:
+    #if year % 100 == 0:
+        #if year % 400 != 0:
+            #print("Not a leap year")
+        #else:
+            #print("Leap year")
+    #else:
+        #print("Leap year")
+#else:
+    #print("Not a leap year")
 
-print("Welcome to the leap year calendar")
-year = int(input("Which year do you want to check?\n"))
+#9.2.2
+# Ticketing task
+#print("Welcome to the rollercoster!")
+#height = int(input("What is your height in cm?\n"))
+#bill = 0
+#if height >= 120:
+    #age = int(input("What is your age?\n"))
+    #if age <= 12:
+        #bill = 5
+        #print("child ticket is $5")
+    #elif age <=18:
+        #bill = 8
+        #print("youth ticket is $8")
+    #else:
+        #bill = 12
+        #print("adult ticket is $12")
+    #photo = input("Do you want a photo taken for an additional $3? Y or N.\n")
+    #if photo == "Y":
+        #bill += 3
+    #print(f"you pay ${bill}")
+#else:
+    #print("sorry, you are short to ride the rollercoster!")
 
-if year/4 == 0:
-    print("It is a leap year")
-elif year/100 == 0:
-    print("It is not a leap year")
-elif year/400 == 0:
-    print("It is a leap year")
+#9.3.1 Pizza order exercise
+#print("Welcome to Python Pizza Deliveries!")
+#size = input("What size pizza do you want? S, M, or L\n")
+#add_pepperoni = input("Do you want pepperoni? Y or N\n")
+#extra_cheese = input("Do you want extra cheese? Y or N\n")
+#bill = 0
+#if size == "S":
+    #if add_pepperoni == "Y":
+        #bill += 15 + 2
+    #else:
+        #bill += 15
+#elif size == "M":
+    #if add_pepperoni == "Y":
+        #bill += 20 + 3
+    #else:
+        #bill += 20
+#elif size == "L":
+    #if add_pepperoni == "Y":
+        #bill += 25 + 3
+    #else:
+        #bill += 25
+#if extra_cheese == "Y":
+    #bill += 1
+#print(f"Your final bill is: ${bill}.")
+
+#9.3.2 Pizza order exercise - Alternative solution
+#to avoid duplication and confusion/mistake in code and input
+#print("Welcome to Python Pizza Deliveries!")
+#size = input("What size pizza do you want? S, M, or L\n")
+#add_pepperoni = input("Do you want pepperoni? Y or N\n")
+#extra_cheese = input("Do you want extra cheese? Y or N\n")
+#bill = 0
+#if size == "S":
+    #bill +=15
+#elif size == "M":
+    #bill += 20
+#elif size == "L":
+    #bill += 25
+#if add_pepperoni == "Y":
+    #if size == "S":
+        #bill += 2
+    #else:
+        #bill += 3
+#if extra_cheese == "Y":
+    #bill += 1
+#print(f"Your final bill is: ${bill}.")
+
+#9.2.3 Ticketing task using logical calculator
+#fix the code below
+#print("Welcome to the rollercoster!")
+#height = int(input("What is your height in cm?\n"))
+#bill = 0
+#if height >= 120:
+    #age = int(input("What is your age?\n"))
+    #if age <= 12:
+        #bill = 5
+        #print("child ticket is $5")
+    #elif age <=18:
+        #bill = 8
+        #print("youth ticket is $8")
+    #and statement
+    #elif age >= 45 and age <=55:
+        #bill = 0
+        #print("You ride free")
+    #else:
+        #print("adult ticket is $12")
+    #photo = input("Do you want a photo taken for an additional $3? Y or N.\n")
+    #if photo == "Y":
+        #bill += 3
+    #print(f"you pay ${bill}")
+#else:
+    #print("sorry, you are short to ride the rollercoster!")
+
+# 9.4 Love calculator using logical operators
+#Test compatibility score between two people
+
+#print("Welcome to the Love Calculator!")
+#name1 = input("What is your name? \n")
+#name2 = input("What is their name? \n")
+#combined_name = name1 + name2
+#lower_case_combined_name = combined_name.lower()
+#t = lower_case_combined_name.count("t")
+#r = lower_case_combined_name.count("r")
+#u = lower_case_combined_name.count("u")
+#e = lower_case_combined_name.count("e")
+#true_word_count = (t + r + u + e)
+#l = lower_case_combined_name.count("l")
+#o = lower_case_combined_name.count("o")
+#v = lower_case_combined_name.count("v")
+#e = lower_case_combined_name.count("e")
+#love_word_count = (l + o + v + e)
+#love_score = int(str(true_word_count) + str(love_word_count))
+#if love_score <=10 or love_score >= 90:
+    #print(f"Your score is {love_score}, you go together like coke and mentos.")
+#elif love_score >=40 and love_score <=50:
+    #print(f"Your score is {love_score}, you are alright together.")
+#else:
+    #print(f"Your score is {love_score}")
+
+#9.5 Treasure island game
+print("Welcome to the Treasure Island!")
+print("Your mission is to find the treasure")
+first_hint = input("Where do you want to go? Left or Right\n")
+if first_hint == "Left":
+    second_hint = input("Do you want to swim or wait\n")
+    if second_hint == "Wait":
+        third_hint = input("Which door do you want to select?\n")
+        if third_hint == "Blue":
+            print("Eaten by beasts. Game over!")
+        elif third_hint == "Red":
+            print("Burned by fire. Game over!")
+        else:
+            print("You win!")
+    else:
+        print("Attacked by trout. Game over!")
 else:
-    print("It is not a leap year")
-
-
+    print("Fall into a hole. Game over!")
