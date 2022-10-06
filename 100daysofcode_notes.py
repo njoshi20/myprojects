@@ -187,3 +187,25 @@
         #do this
     #else:
         #do this
+
+# in a if...elif...else condition, only 1 condition will be
+# carried out but in nested if, all conditions will be carried out
+
+# Logical operators
+    #Check for multiple conditions in the same line of code
+#Three of them are useful:
+    #and operator
+    #     A and B are true for the entire line of code to be True.
+    #or operator
+    # A or B are true then the overall code evaluates to be False. If only needed one of the conditions to be True
+        #then use or operator. If A or B are true or if they are both true, the return will be True
+        #Its only when both are False, this statement returns false
+    #not operator
+#     Reverses the condition
+    #if the condition is False, then the return is True and vice versa
+        #Ex: a = 12
+        #not a > 15
+        #return will be True
+# \ between words will tell Python to ignore the ' in words like You're and treat it as text. So "You\'re"
+# ('abc. "kc". ij') is going to be interpreted as one string because of the single quotes
+#     the double quote words is for the users attention
