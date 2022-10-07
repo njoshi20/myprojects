@@ -251,20 +251,77 @@
     #print(f"Your score is {love_score}")
 
 #9.5 Treasure island game
-print("Welcome to the Treasure Island!")
-print("Your mission is to find the treasure")
-first_hint = input("Where do you want to go? Left or Right\n")
-if first_hint == "Left":
-    second_hint = input("Do you want to swim or wait\n")
-    if second_hint == "Wait":
-        third_hint = input("Which door do you want to select?\n")
-        if third_hint == "Blue":
-            print("Eaten by beasts. Game over!")
-        elif third_hint == "Red":
-            print("Burned by fire. Game over!")
-        else:
-            print("You win!")
-    else:
-        print("Attacked by trout. Game over!")
-else:
-    print("Fall into a hole. Game over!")
+#print("Welcome to the Treasure Island!")
+#print("Your mission is to find the treasure")
+#first_hint = input("Where do you want to go? Left or Right\n")
+#if first_hint == "Left":
+    #second_hint = input("Do you want to swim or wait\n")
+    #if second_hint == "Wait":
+        #third_hint = input("Which door do you want to select?\n")
+        #if third_hint == "Blue":
+            #print("Eaten by beasts. Game over!")
+        #elif third_hint == "Red":
+            #print("Burned by fire. Game over!")
+        #else:
+            #print("You win!")
+    #else:
+        #print("Attacked by trout. Game over!")
+#else:
+    #print("Fall into a hole. Game over!")
+
+#10.1 Coin toss program using randomisation
+#plus testing
+#import random
+#random.seed(3)
+#print(random.random())
+
+#Heads = 1
+#Tails = 0
+#Both = 2
+#Another = 3
+#a = [Heads, Tails]
+#a = [Heads, Tails, Both, Another]
+#print(a)
+#print(random.choice(a))
+
+#10.2.1 Banker Roulette
+#Redo this code to fix the spaces in the return value
+#names = (input("Give me everyone's names, separated by comma.\n"))
+#names.replace(", ", " ,")
+#names = names.split(",")
+#print(names)
+#length = len(names)
+#print(length)
+
+#import random
+#random_selection = random.randint(0, length - 1)
+#the above line of code makes sense because random_selection is a range between the
+# starting number 0 and (-1) of the lists (last value)
+#person_who_will_pay = names[random_selection]
+#print(person_who_will_pay + " is going to pay the bill today")
+
+# Remember, pears will get replaced by melons in the below code
+
+#Given the code below:
+
+#fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+#fruits[-1] = "Melons"
+#fruits.append("Lemons")
+#print(fruits)
+#What do you think will be printed?
+
+#vegetables = ["Spinach", "Kale", "Tomatoes","Celery", "Potatoes"]
+#fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+#dirty_dozen = [vegetables, fruits]
+#print(dirty_dozen)
+
+#Return = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Melons", "Lemons"]
+#print(dirty_dozen[0])
+#print(dirty_dozen[1])
+#print(dirty_dozen[1][2])
+#print(dirty_dozen[1][3])
+
+# the print [1] in print (dirty_dozen [1], [2]) is the 2nd list 'fruits' and [2] is the item in that list with that index i.e Apples
+
+#11 Treasure map
+
