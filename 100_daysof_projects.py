@@ -285,20 +285,17 @@
 #print(random.choice(a))
 
 #10.2.1 Banker Roulette
-#Redo this code to fix the spaces in the return value
-#names = (input("Give me everyone's names, separated by comma.\n"))
-#names.replace(", ", " ,")
-#names = names.split(",")
-#print(names)
-#length = len(names)
+names = input("list down the names of everyone on the dinner table separated by a comma\n")
+comma_separated_names = names.split(",")
+#print(comma_separated_names)
+length = len(comma_separated_names)
 #print(length)
 
-#import random
-#random_selection = random.randint(0, length - 1)
-#the above line of code makes sense because random_selection is a range between the
-# starting number 0 and (-1) of the lists (last value)
-#person_who_will_pay = names[random_selection]
-#print(person_who_will_pay + " is going to pay the bill today")
+import random
+rand_selection = random.randint(0, length-1)
+#print(rand_selection)
+person_who_will_pay = comma_separated_names[rand_selection]
+print(person_who_will_pay + " is going to pay today")
 
 # Remember, pears will get replaced by melons in the below code
 
