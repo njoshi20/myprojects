@@ -285,17 +285,17 @@
 #print(random.choice(a))
 
 #10.2.1 Banker Roulette
-names = input("list down the names of everyone on the dinner table separated by a comma\n")
-comma_separated_names = names.split(",")
+#names = input("list down the names of everyone on the dinner table separated by a comma\n")
+#comma_separated_names = names.split(",")
 #print(comma_separated_names)
-length = len(comma_separated_names)
+#length = len(comma_separated_names)
 #print(length)
 
-import random
-rand_selection = random.randint(0, length-1)
+#import random
+#rand_selection = random.randint(0, length-1)
 #print(rand_selection)
-person_who_will_pay = comma_separated_names[rand_selection]
-print(person_who_will_pay + " is going to pay today")
+#person_who_will_pay = comma_separated_names[rand_selection]
+#print(person_who_will_pay + " is going to pay today")
 
 # Remember, pears will get replaced by melons in the below code
 
@@ -321,4 +321,33 @@ print(person_who_will_pay + " is going to pay today")
 # the print [1] in print (dirty_dozen [1], [2]) is the 2nd list 'fruits' and [2] is the item in that list with that index i.e Apples
 
 #11 Treasure map
+#lists
+#index to change the item in the list
+#nested list
 
+#for loop
+#fruits = ["peach", "apple", "banana"]
+#for fruit in fruits:
+    #print(fruit)
+    #print(fruits)
+#Notice how print(fruit) is different from print(fruits). Also how, loop goes through one item at a time.
+#will assign the variable fruit to each item individually. Executing the print statement three times 
+#can execute multiple things indended in the loop. For ex,
+
+#fruits = ["Peach", "Apple", "Banana"]
+#for fruit in fruits:
+    #print(fruit)
+    #print(fruit + " Pie")
+#return will be Peach Pie, Apple Pie, Banana Pie
+
+#12.1 Average student height calculator
+student_heights = input("Input a list of student heights. Don't separate with comma \n").split()
+total_height = 0
+for heights in student_heights:
+    total = int(total_height + str(heights))
+    print(total)
+
+prices = [30, 20, 10, 5]
+for maxprice in prices:
+    max = 0
+    
