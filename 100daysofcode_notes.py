@@ -276,6 +276,55 @@
 #return value = [['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes'], ['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears']]
 
 
+# Index errors
+# nested lists
+# Appending
+# Offset
 
 
+# 5.1 Loops
+# Loops, Range and code blocks
+
+#for loop
+#Everytime a loop runs, it is = to something. For instance, in the following code, fruits = peach, fruits = apple etc
+#for loop
+#fruits = ["peach", "apple", "banana"]
+#for fruit in fruits:
+    #print(fruit)
+    #print(fruits)
+#Notice how print(fruit) is different from print(fruits). Also how, loop goes through one item at a time.
+#will assign the variable fruit to each item individually. Executing the print statement three times
+#can execute multiple things indended in the loop. For ex,
+
+#fruits = ["Peach", "Apple", "Banana"]
+#for fruit in fruits:
+    #print(fruit)
+    #print(fruit + " Pie")
+#return will be Peach Pie, Apple Pie, Banana Pie
+
+#Inside the for loop
+    #whenever you see a : if it is intended, it is inside the loop
+    #if print(fruits) inside the loop, then it is going to run as many times as the number of items inside the variable. In the above case, thrice
+#outside the for loop
+    #if print(fruits) is not associated to the indentation, it is going to print the list only once and after the for loop is over
+
+
+#How the loop functions
+#     when you say for something in something:
+#     the for loop will run through each item individually
+#         so, for something(0), for something(1) etc
+# Example
+#     numbers = [1, 2, 3, 4]
+#     for n in numbers:
+#       the for loop will run through 1, then 2, then 3, then 4
+
+#     Adding items in the loop without using the sum() function
+#     want to replicate for 1 + 2 + 3 + 4
+#     but because you don't know how many numbers (items) in the list, you need to add it with 0 and assign the list to a variable
+#      so it will be
+#       x = 0
+#       for n in numbers:
+#             x = x + n
+#       print(x)
+# So the way this functions is, x = 0 + 1, then 1 + 2 (since x will now be 1 - given that loop runs one at a time), then 3 + 3 and then 6 + 4. return value 10
 
