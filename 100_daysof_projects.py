@@ -285,22 +285,24 @@
 #print(random.choice(a))
 
 #10.2.1 Banker Roulette
-#names = input("list down the names of everyone on the dinner table separated by a comma\n")
-#comma_separated_names = names.split(",")
-#print(comma_separated_names)
-#length = len(comma_separated_names)
-#print(length)
-
 #import random
-#rand_selection = random.randint(0, length-1)
-#print(rand_selection)
-#person_who_will_pay = comma_separated_names[rand_selection]
-#print(person_who_will_pay + " is going to pay today")
+
+#names_diners = input("Welcome to who will pay today? Insert names of all the diners separated by comma!\n")
+#names_list = names_diners.split(",")
+# print(names_list)
+#length_names = len(names_list)
+# print(length_names)
+#person_to_pay = names_list[random.randint(0, length_names - 1)]
+#print(f"{person_to_pay} is going to pay today's bill. Enjoy!")
+
+# Logic
+# fruits = ["Apple", "Sid", "Neha"]
+# fruit = fruits[1]
+# print(fruit)
 
 # Remember, pears will get replaced by melons in the below code
 
 #Given the code below:
-
 #fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
 #fruits[-1] = "Melons"
 #fruits.append("Lemons")
@@ -321,7 +323,22 @@
 # the print [1] in print (dirty_dozen [1], [2]) is the 2nd list 'fruits' and [2] is the item in that list with that index i.e Apples
 
 #11 Treasure map
-#lists
+
+#Redo the following
+#row1 = ["A", "B", "C"]
+#row2 = ["D", "E", "F"]
+#row3 = ["G", "H", "I"]
+#map = (f"{row1}\n{row2}\n{row3}")
+#print(map)
+#col1 = [row1[0] + " " + row2[0] + " " + row3[0]]
+#col2 = [row1[1] + " " + row2[1] + " " + row3[1]]
+#col3 = [row3[2] + " " + row2[2] + " " + row3[2]]
+#split_col1 = col1.split(" ")
+#print(split_col1)
+
+
+
+#Lists
 #index to change the item in the list
 #nested list
 
@@ -341,13 +358,3 @@
 #return will be Peach Pie, Apple Pie, Banana Pie
 
 #12.1 Average student height calculator
-student_heights = input("Input a list of student heights. Don't separate with comma \n").split()
-total_height = 0
-for heights in student_heights:
-    total = int(total_height + str(heights))
-    print(total)
-
-prices = [30, 20, 10, 5]
-for maxprice in prices:
-    max = 0
-    
