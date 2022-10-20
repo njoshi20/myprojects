@@ -177,7 +177,6 @@
         #do this
 
 #To go to the 2nd if, the 1st if already has to be true
-#Example code:
 
 #Can use multiple elif between the nested if...else
 
