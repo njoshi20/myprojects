@@ -350,44 +350,71 @@
 # will assign the variable fruit to each item individually. Executing the print statement three times
 # can execute multiple things indended in the loop. For ex,
 
-# fruits = ["Peach", "Apple", "Banana"]
-# for fruit in fruits:
-# print(fruit)
+#fruits = ["Peach", "Apple", "Banana"]
+#for fruit in fruits:
+ #   print(fruit)
 # print(fruit + " Pie")
 # return will be Peach Pie, Apple Pie, Banana Pie
 
-# 12.1 Average student height calculator
-#cannot use sum() or len()
-heights = input("List down all heights in cm\n")
-heights_list = heights.split(",")
-list_len = "heights_list - 1"
-print(list_len)
+#12 rock paper scissors game
+#rock = 0
+#paper = 1
+#scissors = 2
+#game_images = [rock, paper, scissors]
+#your_choice = int(input("What do you choose? Type 0 for rock, 1 for paper, and 2 for scissors\n"))
+#if your_choice > 3 or your_choice < 0:
+ #   print("Its an invalid number. Select between 0 and 2")
+#else:
+ #   print(game_images[your_choice])
+  #  import random
+    #computer_choice = random.randint(0, 2)
+   # print("Computer chose:")
+    #print(game_images[computer_choice])
+
+#rock = 0
+#paper = 1
+#sci = 2
+#rock wins against sci (0 against 2)
+#sci wins against paper (2 against 1)
+#paper wins against rock (1 against 0)
+
+    #if your_choice == 0 and computer_choice == 2:
+     #   print("You win!")
+ #   elif your_choice == 2 and computer_choice == 0:
+  #      print("You lose!")
+   # elif your_choice > computer_choice:
+    #    print("You win!")
+  #  elif computer_choice > your_choice:
+   #     print("You lose!")
+  #  elif your_choice == computer_choice:
+   #     print("Its a draw!")
+
+#game images not working
+
+#13 Average height exercise
+
+#Indentation - inside and outside the loop
+#Going through an item one at a time
+#assigning the value of a loop to each item
+#repetation as many as the indices in the list
+#sum and len function without using it
+#if...else statement
+#for loop
+#sum everyone's height, divide by total to find average and convert to whole number round function
+
+student_height = input("Please enter the height in cm for all students individually separated by a comma\n").split( )
+#student_height = ["2", "4", "1", "6"]
+total_height = 0
+for height in student_height:
+    total_height += height
+print(total_height)
 
 
 
+#fruits = ["Peach", "Apple", "Banana"]
+#for fruit in fruits:
+ #   print(fruit)
 
 
-
-
-#your_choice = str(input("What do you choose? Type 0 for rock, 1 for paper, and 2 for scissors\n"))
-#import random
-
-#computer_choice = random.randint(0, 2)
-#print(computer_choice)
-
-#if your_choice == 0 or your_choice != 1 or your_choice!= 2 and computer_choice == 0:
- #   if your_choice == 1 or your_choice!= 2 or your_choice!= 0 and computer_choice == 1:
-  #      if your_choice == 2 or your_choice != 0 or your_choice != 1 and computer_choice == 2:
-   #         print("Its a draw")
-    #elif your_choice == 1 or your_choice != 0 or your_choice != 2 and computer_choice == 0:
-     #   if your_choice == 2 or your_choice != 1 or your_choice != 0 and computer_choice == 1:
-      #      if your_choice == 0 or your_choice != 1 or your_choice != 2 and computer_choice == 2:
-       #         print("Its a win")
-    #elif your_choice == 2 or your_choice != 1 or your_choice != 0 and computer_choice == 0:
-     #   if your_choice == 0 or your_choice != 1 or your_choice != 2 and computer_choice == 1:
-      #      if your_choice == 1 or your_choice != 2 or your_choice != 0 and computer_choice == 2:
-       #         print("Its a loose")
-
-#https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
-
-#
+# print(fruit + " Pie")
+# return will be Peach Pie, Apple Pie, Banana Pie
