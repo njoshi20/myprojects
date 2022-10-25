@@ -327,3 +327,19 @@
 #       print(x)
 # So the way this functions is, x = 0 + 1, then 1 + 2 (since x will now be 1 - given that loop runs one at a time), then 3 + 3 and then 6 + 4. return value 10
 
+#5.2  for loops and the range() function
+# The range function is very usueful if you want to generate a range of numbers to loop through
+# The syntax
+    #for number in range(a, b):
+    #print(number)
+#creating a range between a and b and getting hold of each number inside that range to do something with that number and not including b
+#By default, the range function will step through all the numbers from the start to the end and will increase by 1
+#steps size = To increase by any other number compared to the default add comma to the end of it and specify how large you want the step to be
+#range(start, stop[,step])
+    #for number in range(1, 11, 3):
+    #print(number)
+#Will return: 1 4 7 10
+#
+#
+#
+
