@@ -393,28 +393,73 @@
 
 #13 Average height exercise
 
-#Indentation - inside and outside the loop
-#Going through an item one at a time
-#assigning the value of a loop to each item
-#repetation as many as the indices in the list
-#sum and len function without using it
-#if...else statement
-#for loop
-#sum everyone's height, divide by total to find average and convert to whole number round function
+#behind the hood - sum, len and max function
 
-student_height = input("Please enter the height in cm for all students individually separated by a comma\n").split( )
-#student_height = ["2", "4", "1", "6"]
-total_height = 0
-for height in student_height:
-    total_height += height
-print(total_height)
+# total_height = 0
+# student_heights = input("What is the height of each student?\n").split()
+# for height in student_heights:
+#     total_height = total_height + int(height)
+# print(total_height)
+
+# total_height = 0
+# for student in student_heights:
+#     total_height = total_height + 1
+# print(total_height)
+
+# high_score = 0
+# student_scores = input("Enter all student scores\n").split()
+# for score in student_scores:
+#     if int(score) > int(high_score):
+#         high_score = score
+# print(f"The highest score is {high_score}")
+
+#find min later
+
+#14 Adding even numbers using range() function
+# one print function
+# You are going to write a program that calculates the sum of all the even numbers from 1 to 100.
+# Thus, the first even number would be 2 and the last one is 100:
+
+# even_numbers = 0
+# for even in range(2, 101, 2):
+#     even_numbers = even_numbers + even
+# print(even_numbers)
+
+#alternate way to do the above code
+# even_numbers = 0
+# for numbers in range (1, 101):
+#     if numbers % 2 == 0:
+#         even_numbers = even_numbers + numbers
+# print(even_numbers)
+
+#print(f"The highest score in the clase is: {max_score}")
+
+#The logic for above code
+
+#split() method used to save the items in the string as a list and also allows users to input multiple items.
+# If split() has nothing in the parenthesis, whitespace is the separator.
+# for loop goes over each item one by one (which is still a string list).
+# but now to add these items, they need to be converted to int individually
+# total_heights is set to 0 so Python assumes it to be int but height inside the loop is still a str
+# hence concatenating two separate strings into int needs to be done individually
+
+#15 The fizz buzz job interview question
+
+# will test - range, if...else (3 conditions), divisibility
+
+# You are going to write a program that automatically prints the solution to the FizzBuzz game.
+# Your program should print each number from 1 to 100 in turn.
+# When the number is divisible by 3 then instead of printing the number it should print "Fizz".
+# When the number is divisible by 5, then instead of printing the number it should print "Buzz".`
+#   And if the number is divisible by both 3 and 5 e.g. 15 then instead of the number it should print "FizzBuzz"
+
+number_selection = 0
+for number in range(1, 100):
+    
 
 
-
-#fruits = ["Peach", "Apple", "Banana"]
-#for fruit in fruits:
- #   print(fruit)
-
-
-# print(fruit + " Pie")
-# return will be Peach Pie, Apple Pie, Banana Pie
+# even_numbers = 0
+# for numbers in range (1, 101):
+#     if numbers % 2 == 0:
+#         even_numbers = even_numbers + numbers
+# print(even_numbers)
