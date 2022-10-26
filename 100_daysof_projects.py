@@ -455,8 +455,10 @@
 
 number_selection = 0
 for number in range(1, 100):
-    
-
+    if number/3 == 0:
+        print("Fizz")
+    else:
+        print("Buzz")
 
 # even_numbers = 0
 # for numbers in range (1, 101):
