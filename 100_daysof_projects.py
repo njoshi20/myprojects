@@ -1,16 +1,16 @@
 # 1. Input exercise
 # print the length of prompt
-# print(len(input("What's your name?\n")))
+#print(len(input("What's your name?\n")))
 
 # 2. Variables exercise
 # Switch the values of the two variables around
-# a = input("a: ")
-# b = input("b: ")
-# c = a
-# a = b
-# b = c
-# print(a)
-# print(b)
+#a = input("a: ")
+#b = input("b: ")
+#c = a
+#a = b
+#b = c
+#print(a)
+#print(b)
 
 # 3. Band name generator program. Help a band to come up with a name for their brand by the band answering a few questions. Further instructions below
 # Create a greeting for the program
@@ -19,17 +19,18 @@
 # Combine the name of their city and pet and show their band name
 # make sure the input cursor shows on a new line
 
-# print("Welcome to the Band Name Generator")
-# print("Hello, " + input("What is your name?\n"))
-# x = input("What city were you born in?\n")
-# y = input("What is your pet's name?\n")
-# print("The name of your band could be " + x + " " + y)
+#print("Welcome to the Band Name Generator")
+#print("Hello, " + input("What is your name?\n"))
+#x = input("What city were you born in?\n")
+#print("Ah, " + x+"!" + " " + "That's a beautiful city!")
+#y = input("What is your pet's name?\n")
+#print("So the name of your band could be " + x + " " + y)
 
 # 4. Datatype conversion
 
-# num_char = len(input("What is your name?\n"))
-# new_num_char = str(num_char)
-# print("Your name has " + new_num_char + " characters.")
+#num_char = len(input("What is your name?\n"))
+#new_num_char = str(num_char)
+#print("Your name has " + new_num_char + " characters.")
 
 # 5. Total bill + tip calculator
 # result needs to be two decimal values long
@@ -486,7 +487,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
  #password = password + random.choice(symbols)
     #print(ran_char)
 
-#for char in range(1, nr_numbers + 1):
+#for char in range(1, nr_numbersss + 1):
  #password = password + random.choice(numbers)
   #  #print(ran_char)
 #print(password)
