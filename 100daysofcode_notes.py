@@ -341,5 +341,23 @@
 #Will return: 1 4 7 10
 #
 #
-#
+#Day 6
+    #Code blocks
+#     Indentations
+# While loops
+# Functions
+#   Anything inside the "" is a function
+# Making our own function
+    # start by defining the function using the keyword def
+#     then execute the function, unless the function is executed, the defined function doesn't work
+#   call the function by writing the name of the function
+# Example:
+#     def my_function():
+#      print("Hello World")
+#       print("Bye")
+# my_function()
+# Call the function by writing the name followed by ()
+# Functions allows us to use all the instructions at one time. Single instruction for multiple outcomes in one function
+# Goal - reduce the number of line and make it more readable
+
 
