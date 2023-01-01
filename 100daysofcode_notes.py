@@ -1,4 +1,28 @@
-#Day 1
+#Day 1 - Printing, Commenting, Debugging, String Manipulation, and Variables
+
+#1.1 Printing
+
+#print("content to run") or print('content to run')
+#
+#
+#
+#
+
+#1.2 Commenting
+#1.3 Debugging
+
+#Tip - Notice the color change of the code. Ex, Syntax highlighting
+
+
+#1.4 String Manipulation
+#1.5 Variables
+
+#Day project: Band name generator program
+
+#Takeaways from Day1
+
+
+
 
 #1.1 print function elements - () "" ''
     #"" or '' is identical
