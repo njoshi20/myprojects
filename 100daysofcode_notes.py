@@ -1,79 +1,164 @@
+#Types of functions
+
+#a function is declared
+#print
+#input
+#len
+# round
+
+#Types of errors
+
+
+#When you run the code, errors are identified one at a time. So won't move to the next error unless previous one is fixed
+
+#IndentationError
+#SyntaxError
+# NameError (variable names)
+# TypeError
+
 #Day 1 - Printing, Commenting, Debugging, String Manipulation, and Variables
 
 #1.1 Printing
+#Print is a function
+#the function is declared like this: print("what to print")
+#single or double quotes to interpret a str. Both are fine.
+#content inside '' or "" is interpreted as str not code. Hence don't use two "" or two '' in the same line. Use both. Example below:
+#print('print("what to print")') or print("print('what to print')") Reasoning below
+#because if the line is print("print("what to print")"), it will give a syntax error. Reasoning below
+#Python considers "print(" as str and ")" as str and what to print as code.
+#\n for printing content on the next line but written inside quotes "" like below. 
+#print("Hello World!\nHello World!") no gaps between each line before and after \n unless a space needed before first word
+#Str concatination adding + between characters to merge into one
+#Python reads from inside to outside
 
-#print("content to run") or print('content to run')
-#
-#
-#
-#
+#1.2 Debugging
+# Tip - Notice the color change of the code. Ex, Syntax highlighting
 
-#1.2 Commenting
-#1.3 Debugging
-
-#Tip - Notice the color change of the code. Ex, Syntax highlighting
-
+#1.3 Commenting
+# Tip - Make a comment above a line
 
 #1.4 String Manipulation
+
+#input("prompt for the user")
+#The program ends only after the user adds a prompt
+
+#len
+#print(len(input("What is your name? ")))
+
 #1.5 Variables
+# assigns and saves anything after the = to the bucket to before the =
+# the bucket is called a variable
+# print(variable) allows the variable's content to be printed at any point inside the code
+# the content assigned to a variable can change
+# naming variables - Make the code readable
+# can't have space in between words in a variable. Use _
+# numbers cannot be at the start of the name
+# don't use function names to name a variable
 
-#Day project: Band name generator program
-
-#Takeaways from Day1
-
-
-
-
-#1.1 print function elements - () "" ''
-    #"" or '' is identical
-    #print("print("what to print")") - double quotes "" two times gives a syntax error.
-    #Solution - use one "" and one '' print("print('what to print')") or print('print("what to print")')
-    #\n = new line can be return in between codes on the same line that need to be separated
-        #print("Hello world!\nHello world!\nHello world!")
-    #you can also concatenate using + print("Hello" + " Neha") or print ("Hello" + " " + "Neha")
-    #Indentation error = always start at the beginning of the line
-    #Syntax errors
-    #Python gives out only one traceback at a time. Once you fix that, it moves to the next. Instead, opt for code
-    #intellegence will hint before you run
-#1.2 Debugging
-    #Look for identation and syntax error
-    #Also look for error (syntax) where python thinks what's inside the double quotes is a string and + is just concatenation.
-        #Ex, buggy code: print("String Concatenation is done with the "+" sign.")
-        #Here, Python takes "String...the" as one string + as a code and " sign." as another string
-        #Two ways to fix this:
-            #print('String Concatenation is done with the "+" sign.')
-            #print("String Concatenation is done with the ""+"" sign.")
-        #The first is less confusing
-#1.3 input()
-    #used as a prompt for the user to input something related to the prompt in the ()
-        #Ex: input("What is your name?")
-    #The program gets paused and will only continue if the user answers the prompt
-    #Its only when the user gives the input, the program ends
-    #input("A prompt for the user")
-    #When the user enters a reply to the prompt as a part of the input, then the part of the code in main
-    #that says input("A prompt for the user/something else") gets replaced by the reply of the prompt
-    #print and input statement can be used together like:
-        #print("Hello" + " "+ input("What is your name?"))
-        #Will return Hello Neha
-#instead of adding a # all the time for comments, you can also press command and forward slash on Mac
-# undo, command z for mac
-
-#1.4 Variables
-#Can be changed/varied
-#Can refer it later
-#Referring the piece of data by a variable name. Different piece of data is possible
-#rules on naming the variables
-    #Make the code readable
-    #clear name like user_name
-    #multiple names
-    #can't have spaces in between words. _ to separate codes
-    #numbers cannot be in the beginning of the variable name
-    #Certain previledge words, do not use them as name
-    #make sure all the names of the variable gets highlighted in the same color
-    #name error if the name of the variable and the typed name not matched
+# Switch the values of the two variables around
+# a = input("a: ")
+# b = input("b: ")
+# c = a
+# a = b
+# b = c
+# print(a)
+# print(b)
 
 #Day 2
 # datatype, numbers, operations, Type conversions, f-strings
+
+#2.1 Datatypes
+
+#String str " "
+
+# Subscripting is pulling out a particular element from a str:
+# print("Hello"[0]) will give H
+
+#Integer int
+
+# whole numbers. To declare an integer, write a number without anything else. Ex, 1234 + 455 will add these numbers.
+# To make a number more readable, can use _ in stead of , and the computer will interpret it as one number. Ex, 100_000_000 will be 100000000 for the computer
+
+#Float float
+# decimal numbers
+
+#Boolean bool
+# Two possible values
+# True
+# False
+# Starts with a capital letter has no "" marks
+
+# check type like so: type(variable)
+
+#2.2 Numbers
+
+#Write a program that adds the digits in a 2 digit number. e.g. if the input was 35, then the output should be 3 + 5 = 8
+
+#number = input("Please enter a two digit number\n")
+#first_digit = int(number[0])
+#second_digit = int(number[1])
+#new_digit = first_digit + second_digit
+#print(new_digit)
+
+# 2.3 Operations
+
+#Addition           2+3
+#Subtraction        2-3
+#Multiplication     2*3
+#Division           2/3     Always prints float
+#Exponents          2**3    2 to the power of 3 = 8
+
+#Priority (when more than one operation in one line of code) explained below:
+# PEMDAS
+# Paranthesis
+#Exponents
+#Multiplication
+#Division
+#Addition
+#Subtraction
+# rounding numbers
+# floored division // used when you want to chop off digits after the decimal, converting it to int. Example below
+# number = (8//3)
+# print(type(number))
+# the below is a shortcut to manipulate a value based on previous value saved in a variable
+# number/=2
+# number-=2
+# number+=2
+# number*=2
+#Note: 'Multiplication and Division' and 'Addition and Subtraction' are equally important. The calculation most to the left is prioritized
+
+#Example below:
+#number = 3*3+3/3-3
+# Result will be 7.0
+
+# 2.4 Data conversion
+
+# BMI calculator - convert BMI as a whole number (rounded)
+# name = input("What's your name?\n")
+# print("Hello, " + name)
+# weight = int(input("Please enter your weight in kg:\n"))
+# height = float(input("Please enter your height in meters:\n"))
+# BMI = weight/height*height
+# BMI_whole = int(BMI)
+# print("Your BMI is " + str(BMI_whole))
+
+# Rounding numbers
+# use round function. If precision for how many digits after decimal is needed for the code, add , and digit to round to
+# numbers = round(8/3, 4)
+# print(numbers)
+
+#2.5 f-Strings
+# f-Strings makes it easy to mix str and other datatypes without converting.
+# Add the character f added in front of the "" or ''. This is now f-string. Use {} to add the variable name for f-string
+# Does the converting behind the scene. Example below:
+# score = 0
+# height = 1.8
+# iswinning = True
+# print(f"Your score is {score}, your height is {height}, and you are winning is {iswinning}")
+# Different datatypes got converted in a str in the same line of code
+#
+
+
 
 #1.1 datatype
     # strings
