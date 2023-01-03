@@ -1,30 +1,18 @@
-# 1. Input exercise
-# print the length of prompt
-#print(len(input("What's your name?\n")))
+# Band name generator
+# Use printing, commenting, \n, variables, str concatenation and input function
 
-# 2. Variables exercise
-# Switch the values of the two variables around
-#a = input("a: ")
-#b = input("b: ")
-#c = a
-#a = b
-#b = c
-#print(a)
-#print(b)
+#Create a greeting for your user
+print("Welcome to the Band Name Generator")
+#Ask their name and welcome them. Name in next line.
+print("Hello, " + input("What is your name?\n"))
+#Ask the user for the city that they were born in. Answer in next line.
+city = input("What's the name of the city you were born in?\n")
+# Ask the user their pet's name. Answer in next line
+pet = input("What's the name of your pet?\n")
+# Combine the name of their city with the name of their pet
+print("Your band name could be " + city + " " + pet)
 
-# 3. Band name generator program. Help a band to come up with a name for their brand by the band answering a few questions. Further instructions below
-# Create a greeting for the program
-# Ask the user for the city they grew up in
-# Ask the user for the name of the pet
-# Combine the name of their city and pet and show their band name
-# make sure the input cursor shows on a new line
 
-#print("Welcome to the Band Name Generator")
-#print("Hello, " + input("What is your name?\n"))
-#x = input("What city were you born in?\n")
-#print("Ah, " + x+"!" + " " + "That's a beautiful city!")
-#y = input("What is your pet's name?\n")
-#print("So the name of your band could be " + x + " " + y)
 
 # 4. Datatype conversion
 
