@@ -102,11 +102,19 @@
 
 # 2.3 Operations
 
-#Addition           2+3
-#Subtraction        2-3
-#Multiplication     2*3
-#Division           2/3     Always prints float
-#Exponents          2**3    2 to the power of 3 = 8
+#Addition                               2+3
+#Subtraction                            2-3
+#Multiplication                         2*3
+#Division                               2/3     Always prints float
+#Exponents                              2**3    2 to the power of 3 = 8
+# Greater than                          2>3
+# Less than                             2<3
+# Greater than and equal to             2>=3
+# Lesser than and equal to              2<=3
+# Equal to                              2==3
+# Not equal to                          2!=3
+# Modulo (remainder after division)     7 % 2 gives 1
+
 
 #Priority (when more than one operation in one line of code) explained below:
 # PEMDAS
@@ -173,104 +181,127 @@
 # months_left = years_left*months_in_a_year
 # print(f"You have, {days_left} days, {weeks_left} weeks, {months_left} months left.")
 
-user_age = input("What is your current age?\n")
-average_age = 90
-years_left = int(user_age)*365 - 90
-print(years_left)
+# age = input("What is your current age?\n")
+# comment - average age in this problem is 90 years and there are 365 days, 52 weeks and 12 months in a year
+# comment - PAMDAS, type conversion and f-string tested here
+# days_left = (90 - int(age))*365
+# weeks_left = (90 - int(age))*52
+# months_left = (90 - int(age))*12
+# comment - you can do calculations within the curly brackets as seen below
+# print(f"You have {90 - int(age)} years left i.e. {days_left} days, {weeks_left} weeks, {months_left} months left.")
+# comment - save in variable for more readability
+# life_left = f"You have {90 - int(age)} years left i.e. {days_left} days, {weeks_left} weeks, {months_left} months left."
+# print(life_left)
 
+# 2.6 end of day quiz
 
-# print(f"You have, {days_left} days, {weeks_left} weeks, {months_left} months left.")
+# Which of the following will give an error
 
+# name = input("What is your name?\n")
+# print(f"Hello, {name}")
 
+# name = input("What is your name")
+# print("Hello, " + name)
 
+# age = 12
+# print(f"You are {age} years old")
 
+# The below code will give a TypeError because age is an int.
+# age = 12
+# print("You are " + age + "years old")
+# Debugging above code:
+# age = 12
+# print(("You are ") + str(age) + (" years old"))
 
-
-#1.1 datatype
-    # strings
-    # integers
-    # booleans
-    # float
-
-# 1.1.1 string str
-    #pulling out each character of a string individually is done by putting the index/position of
-    # the character we want
-    # print("Hello"[4])
-    #This method is called subscripting.
-    # Remember to add the index after "" to not include it as a string i.e. piece of text but extraction
-
-#1.1.2 integer int
-    #can use operators to calculate two numbers without using "" but in () to add integers or for
-    # Python to know it is an integer
-        # print(123)
-        # print(123 + 5)
-    #In python, commas between numbers can be replaced with _ so (100_000) instead of (100,000)
-    #and it will be interpreted by the computer as 100000 so the computer will remove _and ignores it
-
-#1.1.3 Float float
-    # floating point number (3.14)
-
-#1.1.4 Boolean bool
-    # Two possible values True or False
-    # Capital T and F are important
-
-# 1.1.5 Datatype and their conversions
-    # len() gives an error when passing a number i.e int instead of a str
-    # type() checks for what's in the parenthesis and gives you the type data that it is
-    # can save a converted datatype into a new variable. for instance
-        #num_char = len(input("What is your name?"
-        #new_num_char = str(num_char)
-        #print("Your name has " + new_num_char + " character.")
-
-#2.1 Mathematical operations
-    # subtraction -
-    # multiplication *
-    # divide - / will always get a float
-    # Addition +
-    # exponents (raise a number to the power) **
-    # When you have more than one operation on the same line of code, there is priority
-        #Follow PAMDAS - parenthesis, exponents, multiplication, division, addition, subtraction
-        #Multiplication and division are equally imp, addition and subtraction are equally imp.
-        #The one to the left has first priority in the above case
-    #Adding () nested in (), the inside() gets prioritized. Low priority calculations become highest & would happen first
-
-#2.2 Number manipulation
-#The round() function rounds the number into a whole number (.5 rule for result). can specify how many decimal points to include in the rounding by adding comma. eg
-    #print(3+4.41, 2) will result in 7.41
-    #for getting back int not float, use // (3.0 // 2) will give you 5. Datatype will be int. Its called Floor division
-
-#If we had saved the result of this calculation in a variable, then one of the things you can do is,
-#comtimue performing calculations on this variable
-    #x = 4/2
-    #x =/ 2
-    #Result will be 1
-#score = 0
-#user scores a point
-    #score += 1
-#result - score = 1
-
-#3 F-strings
-    #Makes it easy to mix strings and various datatypes
-#instead of converting multiple datatypes in a line of code and separating them with a +, f-String can be used
-#f goes in front of '' or ""
-    #score = 0
-    #height = 1.8
-    #iswinning = True
-
-    #print(f"your score is {score}, your height is{height}, you are winning is{iswinning}")
-#Result = your score is 0, your height is 1.8, you are winning is True. Here, all the datatypes got converted to str
-#Remember to add spaces when required
-
-#score = 0
-#height = 1.8
-#iswinning = True
-
-#print(f"your score is {score}, your height is {height}, you are winning is {iswinning}")
-
-#total_individual_bill =] "{:.2f}".format(individual_tip_amount + total_bill/num_of_people)
-#above is formatting for decimal places, f string
+# 2.7 Final project of the day - Tip calculator. Check 100_daysof_projects.py for the problem and solution
 
 #Day 3
+# Conditional statements, Logical operators, Code blocks, scope
+
+# 3.1 Conditional statements
+# if
+# else
+# elif
+# Important elements - condition in check, syntax and indentation
+# Everything indented after the if, else and elif is their block of code. So what follows the colon and indentation, gets the instruction from the condition
+# Comparative operations used often
+
+# Odd or even number (use of % modulo)
+# number = int(input("Which number do you want to check?\n"))
+# if number % 2 == 0:
+#     print("This is an even number")
+# if number % 2 != 0:
+#     print("This is an odd number")
+
+# Nested if...else statement
+# Once the 1st condition is passed, we can check another
+
+print("Welcome to the roller coaster ride. Please answer a few quick questions")
+height = int(input("What is your height in cm?\n"))
+if height <= 120:
+    print("Sorry, you can't ride")
+else:
+    age = int(input("How old are you?\n"))
+    if age <= 12:
+        print("You pay $5")
+    elif age <= 18:
+        print("You pay $7")
+    else:
+        print("You pay $12")
+    photo = input("Do you want your photo taken? Y or N.\n")
+    if photo = Y:
+        print(f"Your total bill is {3 + }")
+
+
+
+
+
+
+
+
+# BMI calculator
+
+# height = float(input("What is your height in m?\n"))
+# weight = float(input("What is your weight in kg?\n"))
+# BMI = round(weight/(height**2))
+# if BMI < 18.5:
+#     print(f"Your BMI is {BMI} and you are underweight")
+# elif BMI < 25:
+#     print(f"Your BMI is {BMI} and you are normal weight")
+# elif BMI < 30:
+#     print(f"Your BMI is {BMI} and you are slightly overweight")
+# elif BMI < 35:
+#     print(f"Your BMI is {BMI} and you are obese")
+# else:
+#     print(f"Your BMI is {BMI} and you are clinically obese")
+
+# if...elif...else only one condition will be carried out
+
+# Notes: create a flowchart for if statements
+
+# In situation where multiple conditions need to be used even if the first condition is true
+
+
+
+
+
+# Treasure island
+#
+
+# 3.2 Logical operators
+# 3.3 Code blocks
+# 3.4 Scope
+
+
+# Important takeaways
+# single = is assignment of value to the right to the value to the left
+# Double == is to check equality between value to the right and value to the left
+
+
+
+
+
+
 # conditional statements
 # logical operators
 # code blocks
@@ -494,5 +525,4 @@ print(years_left)
 # Call the function by writing the name followed by ()
 # Functions allows us to use all the instructions at one time. Single instruction for multiple outcomes in one function
 # Goal - reduce the number of line and make it more readable
-
 
