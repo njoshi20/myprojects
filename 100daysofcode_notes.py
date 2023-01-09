@@ -236,293 +236,131 @@
 # Nested if...else statement
 # Once the 1st condition is passed, we can check another
 
-print("Welcome to the roller coaster ride. Please answer a few quick questions")
-height = int(input("What is your height in cm?\n"))
-if height <= 120:
-    print("Sorry, you can't ride")
-else:
-    age = int(input("How old are you?\n"))
-    if age <= 12:
-        print("You pay $5")
-    elif age <= 18:
-        print("You pay $7")
-    else:
-        print("You pay $12")
-    photo = input("Do you want your photo taken? Y or N.\n")
-    if photo = Y:
-        print(f"Your total bill is {3 + }")
 
-
-
-
-
-
-
-
-# BMI calculator
-
-# height = float(input("What is your height in m?\n"))
-# weight = float(input("What is your weight in kg?\n"))
-# BMI = round(weight/(height**2))
-# if BMI < 18.5:
-#     print(f"Your BMI is {BMI} and you are underweight")
-# elif BMI < 25:
-#     print(f"Your BMI is {BMI} and you are normal weight")
-# elif BMI < 30:
-#     print(f"Your BMI is {BMI} and you are slightly overweight")
-# elif BMI < 35:
-#     print(f"Your BMI is {BMI} and you are obese")
+# Multiple if statements in succession. example below
+# print("Welcome to the roller coaster ride. Please answer a few quick questions")
+# height = int(input("What is your height in cm?\n"))
+# if height <= 120:
+#     print("Sorry, you can't ride")
 # else:
-#     print(f"Your BMI is {BMI} and you are clinically obese")
+# age and photo have same indentation
+# Variable 'bill' is created to add it inside the f-string and {}
+    # age = int(input("How old are you?\n"))
+    # if age <= 12:
+    #     bill = 5
+    #     print("Child ticket is $5")
+    # elif age <= 18:
+    #     bill = 7
+    #     print("Youth ticket is $7")
+    # else:
+    #     bill = 12
+    #     print("Adult ticket is $12")
+    # photo = input("Do you want your photo taken for an additional $3? Y or N.\n")
+    # if photo == "Y":
+    #     bill_photo = 3
+    #     print(f"Your total bill is ${bill_photo + bill}")
+    # else:
+    #     print(f"Your total bill is ${bill}")
 
-# if...elif...else only one condition will be carried out
-
-# Notes: create a flowchart for if statements
-
-# In situation where multiple conditions need to be used even if the first condition is true
+# Pizza order code - multiple if statements
 
 
-
-
-
-# Treasure island
+# print("Welcome to Python Pizza Deliveries. Let's start your order")
+# size = input("What size pizza would you like? S, M or L\n")
+# add_pepporoni = input("Do you want pepporoni? Y or N\n")
+# extra_cheese = input("Do you want extra cheese? Y or N\n")
+# bill = 0
+# if size == "S":
+#     bill = bill + 15
+# elif size == "M":
+#     bill = bill + 20
+# elif size == "L":
+#     bill = bill + 25
 #
+# if add_pepporoni == "Y":
+#     bill = current value of bill + 2
+    # if size == "S":
+    #     bill = bill + 2
+    # elif size == "M":
+    #     bill = bill + 3
+    # elif size == "L":
+    #     bill = bill + 3
+#
+# if extra_cheese == "Y":
+#     bill = bill + 1
+# print(f"Your total bill is ${bill}")
 
-# 3.2 Logical operators
-# 3.3 Code blocks
-# 3.4 Scope
+# 3.2 Combining conditions - logical operations
 
-
-# Important takeaways
-# single = is assignment of value to the right to the value to the left
-# Double == is to check equality between value to the right and value to the left
-
-
-
-
-
-
-# conditional statements
-# logical operators
-# code blocks
-# scope
-
-#Syntax
-
-#1.1 Conditions
-#if condition:
-    #do this
+#Multiple conditions in the same line of code
+# if condition1 & condition2 & condition3
+#     do this
 #else:
-    #do this
-#Everything written after the :, it is a block of code
+#   do this
 
-#1.2 Comparision operators
-
-# >     Greater than
-# <     Less than
-# >=    Greater than or equal to
-# <=    Less than or equal to
-# ==    equal to
-# !=    not equal to
-
-# %     modulo - will divide a number by another and give the remainder of that division as the return value
-#remember example: 7% 2 = 1 because it is 2 + 2 + 2 + 1 and 7% 3 = 1 because it is 3 + 3 + 1
-
-#1.3 Nested if and elif statement
-
-#In a nested if, if one condition is passed, we check for another condition and then we can have another if else inside the if condition
-#The computer looks at the overall condition and starts evaluating the first if statement. Here, it wants to find out if it needs to read through the else block or
-#go to the nested if - else condition
-
-#1.4 if condition:
-    #if another condition:
-        #do this
-    #else:
-        #do this
-    #else:
-        #do this
-
-#To go to the 2nd if, the 1st if already has to be true
-
-#Can use multiple elif between the nested if...else
-
-#1.5 elif condition:
-    #if condition1:
-        #do this
-    #elif condition2:
-        #do this
-    #else:
-        #do this
-
-# in a if...elif...else condition, only 1 condition will be
-# carried out but in nested if, all conditions will be carried out
-
-#2.1 Logical operators
-    #Check for multiple conditions in the same line of code
-#Three of them are useful:
-    #and operator
-    #     A and B are true for the entire line of code to be True.
-    #or operator
-    # A or B are true then the overall code evaluates to be False. If only needed one of the conditions to be True
-        #then use or operator. If A or B are true or if they are both true, the return will be True
-        #Its only when both are False, this statement returns false
-    #not operator
-#     Reverses the condition
-    #if the condition is False, then the return is True and vice versa
-        #Ex: a = 12
-        #not a > 15
-        #return will be True
-# \ between words will tell Python to ignore the ' in words like You're and treat it as text. So "You\'re"
-# ('abc. "kc". ij') is going to be interpreted as one string because of the single quotes
-#     the double quote words is for the users attention
-
-#Day 4
-# Randomisation and lists
-
-#4.1 Randomisation
-
-# Imp when we want to create computer programs that have a degree of unpredictibility
-# Mersenne Tester
-#import random
-#random_integer = random.randint(1, 10)
-#print(random_integer)
-#The code above will print random integers between 1 and 10, including 1 and 10 (this is a range)
-
-#What is a module
-    #split the code up into individual modules where each module represents a different set of program
-#Can create multiple new files and import those files in main.py
-#example:
-    #create a file my_module.py
-    #now add pi = 3.1415
-    #now import the my_module.py in the main.py
-    #and print my_module.pi
-    #Return value will be 3.1415
-
-#random_float = random.random()
-#print(random_float)
-#Will always generate a number between 0 and 1 (excluding 1) and has many decimal places.
-#Random floating number between 0 and 5
-    # * by 5
-    # import random
-    # random_float = random.random()
-    #print (random_float)
-
-    #random_float * 5
-    #to expand the range from 0 to 1, all the way to 0 to 5 but not including 5
-
-#For example, in the love score example,
-#love_score = random.randint(1, 100)
-#print(f"Your love score is {love_score}")
-
-#random can be used in a game of dice, flipping a coin etc
-
-#4.2.1 Lists
-# It is a data structure - way of organizing
-#[" "] items separated by comma
-# order of the item is represented by index [0]
-#you can also right negative number, [-1] shows last item of the list
-# can alter item in the list using the following syntax
-#     var[index] = "new value"
-# can add to the list using the following syntax
-#    var.append("new addition") this will be added at the end of the list
-
-#4.2.2 Index errors and working with nested lists
-# Index out of range
-# by (var - 1), the last number of the index in the list becomes one less. i.e in a 50 states list, the last state takes the index number 49 and first takes 0
-
-# to have multiple lists in one list, follow the following code
-
-#Nested lists example code
-
-#vegetables = ["Spinach", "Kale", "Tomatoes","Celery", "Potatoes"]
-#fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
-#dirty_dozen = [vegetables, fruits]
-#print(dirty_dozen)
-#return value = [['Spinach', 'Kale', 'Tomatoes', 'Celery', 'Potatoes'], ['Strawberries', 'Nectarines', 'Apples', 'Grapes', 'Peaches', 'Cherries', 'Pears']]
+#Logical operators:
+# A and B
+# They both have to be true for the entire line of code to be true
 
 
-# Index errors
-# nested lists
-# Appending
-# Offset
+# C or D    C and D
+# C and D: If one of them is false, the entire line evaluates as False. If both conditions are true, the entire line gets evaluated as true. use
+# C or D: Only with C or D is false, the line because False
 
+# not E
+# Reverses the condition. If the condition is False than it becomes true, if the condition is True then it becomes False
+# Example: a = 12
+# not a > 15
+# Returns back True
 
-# 5.1 Loops
-# Loops, Range and code blocks
-
-#for loop
-#Everytime a loop runs, it is = to something. For instance, in the following code, fruits = peach, fruits = apple etc
-#for loop
-#fruits = ["peach", "apple", "banana"]
-#for fruit in fruits:
-    #print(fruit)
-    #print(fruits)
-#Notice how print(fruit) is different from print(fruits). Also how, loop goes through one item at a time.
-#will assign the variable fruit to each item individually. Executing the print statement three times
-#can execute multiple things indended in the loop. For ex,
-
-#fruits = ["Peach", "Apple", "Banana"]
-#for fruit in fruits:
-    #print(fruit)
-    #print(fruit + " Pie")
-#return will be Peach Pie, Apple Pie, Banana Pie
-
-#Inside the for loop
-    #whenever you see a : if it is intended, it is inside the loop
-    #if print(fruits) inside the loop, then it is going to run as many times as the number of items inside the variable. In the above case, thrice
-#outside the for loop
-    #if print(fruits) is not associated to the indentation, it is going to print the list only once and after the for loop is over
-
-
-#How the loop functions
-#     when you say for something in something:
-#     the for loop will run through each item individually
-#         so, for something(0), for something(1) etc
-# Example
-#     numbers = [1, 2, 3, 4]
-#     for n in numbers:
-#       the for loop will run through 1, then 2, then 3, then 4
-
-#     Adding items in the loop without using the sum() function
-#     want to replicate for 1 + 2 + 3 + 4
-#     but because you don't know how many numbers (items) in the list, you need to add it with 0 and assign the list to a variable
-#      so it will be
-#       x = 0
-#       for n in numbers:
-#             x = x + n
-#       print(x)
-# So the way this functions is, x = 0 + 1, then 1 + 2 (since x will now be 1 - given that loop runs one at a time), then 3 + 3 and then 6 + 4. return value 10
-
-#5.2  for loops and the range() function
-# The range function is very usueful if you want to generate a range of numbers to loop through
-# The syntax
-    #for number in range(a, b):
-    #print(number)
-#creating a range between a and b and getting hold of each number inside that range to do something with that number and not including b
-#By default, the range function will step through all the numbers from the start to the end and will increase by 1
-#steps size = To increase by any other number compared to the default add comma to the end of it and specify how large you want the step to be
-#range(start, stop[,step])
-    #for number in range(1, 11, 3):
-    #print(number)
-#Will return: 1 4 7 10
+# Love calculator
+# your_name = input("What is your name?\n")
+# their_name = input("What is your partner's name?\n")
+# combined_names = your_name + their_name
+# lower_names = combined_names.lower()
 #
+# T = lower_names.count("t")
+# R = lower_names.count("r")
+# U = lower_names.count("u")
+# E = lower_names.count("e")
+# true_sum = T + R + U + E
+# L = lower_names.count("l")
+# O = lower_names.count("o")
+# V = lower_names.count("v")
+# E = lower_names.count("e")
+# love_sum = L + O + V + E
 #
-#Day 6
-    #Code blocks
-#     Indentations
-# While loops
-# Functions
-#   Anything inside the "" is a function
-# Making our own function
-    # start by defining the function using the keyword def
-#     then execute the function, unless the function is executed, the defined function doesn't work
-#   call the function by writing the name of the function
-# Example:
-#     def my_function():
-#      print("Hello World")
-#       print("Bye")
-# my_function()
-# Call the function by writing the name followed by ()
-# Functions allows us to use all the instructions at one time. Single instruction for multiple outcomes in one function
-# Goal - reduce the number of line and make it more readable
+# love_score = int(str(true_sum) + str(love_sum))
+# if love_score <= 10 or love_score >= 90:
+#     print(f"Your score is {love_score}, you go together like coke and mentos.")
+# elif love_score >=40 and love_score <= 50:
+#     print(f"Your score is {love_score}, you are alright together")
+# else:
+#     print(f"Your score is {love_score}")
+#
+# Treasure Island
+# input("Welcome to the Treasure Island. Your mission is to find the treasure.")
+# direction = input("Where do you want to go?\n")
+# if direction == "Right":
+#     print("Game Over!")
+# else:
+#     choice = input("Do you want to swim or wait? Select Swim or Wait\n")
+#     if choice == "Swim":
+#         print("Game over!")
+#     else:
+#         door = input("Which door? Select Blue, Yellow, or Red\n")
+#         if door == "Blue" or door == "Red":
+#             print("Game Over!")
+#         else:
+#             print("You win!")
+        # or
+        # path of least resistance code bellow
+        # if door == "Yellow":
+        # print ("You win!")
+        # else:
+        # print ("Game over")
+# Tip You can get python to ignore the symbol (that can be mistaken as code) within the code using \ so You\'re for You're
+# making sure all cases are covered, all caps, uppercase, lower case.
+# One way is converting the input to lower by using .lower
+
 
