@@ -60,3 +60,11 @@
 # else:
 #     print("Not a leap year")
 
+# BMI calculator - convert BMI as a whole number (rounded)
+# name = input("What's your name?\n")
+# print("Hello, " + name)
+# weight = int(input("Please enter your weight in kg:\n"))
+# height = float(input("Please enter your height in meters:\n"))
+# BMI = weight/height*height
+# BMI_whole = int(BMI)
+# print("Your BMI is " + str(BMI_whole))

@@ -6,8 +6,8 @@
 #len
 # round
 
-#Types of errors
-
+# Types of errors
+#
 
 #When you run the code, errors are identified one at a time. So won't move to the next error unless previous one is fixed
 
@@ -56,7 +56,8 @@
 # don't use function names to name a variable
 
 # Switch the values of the two variables around
-# a = input("a: ")
+#a = input("a: ")
+
 # b = input("b: ")
 # c = a
 # a = b
@@ -140,15 +141,6 @@
 # Result will be 7.0
 
 # 2.4 Data conversion
-
-# BMI calculator - convert BMI as a whole number (rounded)
-# name = input("What's your name?\n")
-# print("Hello, " + name)
-# weight = int(input("Please enter your weight in kg:\n"))
-# height = float(input("Please enter your height in meters:\n"))
-# BMI = weight/height*height
-# BMI_whole = int(BMI)
-# print("Your BMI is " + str(BMI_whole))
 
 # Rounding numbers
 # use round function. If precision for how many digits after decimal is needed for the code, add , and digit to round to
@@ -362,5 +354,6 @@
 # Tip You can get python to ignore the symbol (that can be mistaken as code) within the code using \ so You\'re for You're
 # making sure all cases are covered, all caps, uppercase, lower case.
 # One way is converting the input to lower by using .lower
+
 
 
